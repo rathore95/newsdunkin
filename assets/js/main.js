@@ -211,6 +211,29 @@
 
     });
 
+    $(window).on('load', function(){
 
+        /*---------------------
+            Date
+        ----------------------*/
+        const date = new Date();
+        $('.cal').html(date.toLocaleString("en-US", {
+            weekday: "long",
+            month: "long",
+            day: "numeric",
+        }));
+
+        $('.change-date').html(date.toLocaleString("en-US", {
+            day: "2-digit",
+            month: "2-digit",
+            year: "numeric",
+        }));
+
+        $('.date-month').html(date.toLocaleString("en-US", {
+            month: "long",
+            day: "2-digit",
+            year: "numeric",
+        }));
+    })
 
 })(jQuery);
