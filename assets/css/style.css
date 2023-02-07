@@ -86,6 +86,17 @@ body {
   font-size: var(--body-font-size);
 }
 
+.logo{
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.logo span{
+  color: #ffbe00;
+}
+
 h1 {
   font-size: 60px;
   line-height: 1.3333333333;
